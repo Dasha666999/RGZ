@@ -1,0 +1,157 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header .info {
+    height:30px;
+    line-height:30px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 14px;
+}
+
+header h1 {
+    background-color: #e0e4ff;
+    color:black;
+    margin:0;
+    padding: 20px 0 20px 15px;
+}
+
+nav {
+    background-color: #e0e4ff;
+    padding:10px;
+}
+nav ul {
+    margin:0;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align: center;
+    color:black;
+    display: inline-block;
+    width:200px;
+}
+
+nav ul li a {
+    color:black;
+    text-decoration: none;
+    padding: 15px 0;
+    display: block;
+    transition: all 300ms;
+}
+nav ul li a:hover {
+    color:blueviolet;
+}
+
+nav .searchbox {
+    display: inline-block;
+    padding-top: 11px;
+}
+
+nav .searchbox button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 300ms;
+}
+nav .searchbox button:hover {
+    opacity: 1;
+}
+
+footer {
+    padding:25px;
+    color:#eee;
+    background-color: black;
+}
+
+main {
+    background-color: white;
+    color:black;
+    padding: 30px 0;
+}
+
+.card {
+    display: inline-block;
+    width:300px;
+    height:400px;
+    text-align: center;
+    padding:7px;
+    border-radius:7px;
+    transition: all 300ms;
+}
+
+.card a {
+    text-decoration: none;
+    color:black;
+    transition:all 300ms;
+}
+
+
+
+.card a:hover {
+    color:blue;
+}
+
+.card .image {
+    height:350px;
+}
+
+.card .image img {
+    max-width:250px;
+    max-height:350px;
+}
+
+.card .product-name{
+    font-size:20px;
+}
+
+.modal {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms 150ms;
+
+    width: 300px;
+    position: fixed;
+    left: 50%;
+    top: 200px;
+    margin-left: -150px;
+
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: #091077;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 0 7px #4a0;
+}
+
+.modal .message {
+    margin-bottom: 18px;
+}
+.modal .message img {
+    max-width: 300px;
+}
+.modal button {
+    padding: 7px;
+}
+.overlay {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
